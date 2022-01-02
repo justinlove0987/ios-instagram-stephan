@@ -27,7 +27,7 @@ class MainTabController: UITabBarController {
         
         let search = templateNavigationController(unselectedImage: UIImage(named: "search_unselected")!,
                                                   selectedImage: UIImage(named: "search_selected")!,
-                                                  rootViewController: FeedController())
+                                                  rootViewController: SearchController())
         
         let imageSelector = templateNavigationController(unselectedImage: UIImage(named: "plus_unselected")!,
                                                          selectedImage: UIImage(named: "plus_unselected")!,
