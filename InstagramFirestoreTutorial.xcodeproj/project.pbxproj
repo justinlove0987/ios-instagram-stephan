@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A3D65AB33E5E0169C653AC9A /* Pods_InstagramFirestoreTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */; };
 		D07C04FF2787458C00B9E986 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D07C04FE2787458C00B9E986 /* GoogleService-Info.plist */; };
+		D07C0501278886F300B9E986 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C0500278886F300B9E986 /* AuthService.swift */; };
+		D07C05032788870900B9E986 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C05022788870900B9E986 /* ImageUploader.swift */; };
 		D087F320278201ED006F620B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087F31F278201ED006F620B /* FeedCell.swift */; };
 		D087F322278202F4006F620B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087F321278202F4006F620B /* Extensions.swift */; };
 		D087F32D278424BA006F620B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087F32C278424BA006F620B /* LoginController.swift */; };
@@ -33,6 +35,8 @@
 		9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFirestoreTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB735D10E0B62EC65B1B75 /* Pods-InstagramFirestoreTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirestoreTutorial.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		D07C04FE2787458C00B9E986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D07C0500278886F300B9E986 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D07C05022788870900B9E986 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		D087F31F278201ED006F620B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D087F321278202F4006F620B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D087F32C278424BA006F620B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -74,7 +78,6 @@
 				B8DB735D10E0B62EC65B1B75 /* Pods-InstagramFirestoreTutorial.debug.xcconfig */,
 				E582499436126EB14C787E20 /* Pods-InstagramFirestoreTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +148,8 @@
 		D0A6B021277DE1CD007B198B /* API */ = {
 			isa = PBXGroup;
 			children = (
+				D07C05022788870900B9E986 /* ImageUploader.swift */,
+				D07C0500278886F300B9E986 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 			files = (
 				D087F333278484E4006F620B /* CustomTextField.swift in Sources */,
 				D0A6B02C277DE6A8007B198B /* FeedController.swift in Sources */,
+				D07C05032788870900B9E986 /* ImageUploader.swift in Sources */,
 				D087F32D278424BA006F620B /* LoginController.swift in Sources */,
 				D087F320278201ED006F620B /* FeedCell.swift in Sources */,
 				D0A6B030277DE6DB007B198B /* ImageSelectorController.swift in Sources */,
@@ -318,6 +324,7 @@
 				D087F322278202F4006F620B /* Extensions.swift in Sources */,
 				D0A6B00F277DE18B007B198B /* SceneDelegate.swift in Sources */,
 				D087F32F278424CA006F620B /* RegistrationController.swift in Sources */,
+				D07C0501278886F300B9E986 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
