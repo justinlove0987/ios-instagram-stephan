@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A3D65AB33E5E0169C653AC9A /* Pods_InstagramFirestoreTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */; };
+		D0156698278C18AE00F4277B /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0156697278C18AE00F4277B /* ProfileCell.swift */; };
+		D015669A278C18BE00F4277B /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0156699278C18BE00F4277B /* ProfileHeader.swift */; };
 		D07C04FF2787458C00B9E986 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D07C04FE2787458C00B9E986 /* GoogleService-Info.plist */; };
 		D07C0501278886F300B9E986 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C0500278886F300B9E986 /* AuthService.swift */; };
 		D07C05032788870900B9E986 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C05022788870900B9E986 /* ImageUploader.swift */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFirestoreTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB735D10E0B62EC65B1B75 /* Pods-InstagramFirestoreTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirestoreTutorial.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		D0156697278C18AE00F4277B /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		D0156699278C18BE00F4277B /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		D07C04FE2787458C00B9E986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D07C0500278886F300B9E986 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D07C05022788870900B9E986 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 				9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D015669B278C18CC00F4277B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D0156699278C18BE00F4277B /* ProfileHeader.swift */,
+				D0156697278C18AE00F4277B /* ProfileCell.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		D087F32B278424A9006F620B /* Authentication */ = {
@@ -179,6 +192,7 @@
 		D0A6B027277DE1EA007B198B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D015669B278C18CC00F4277B /* Profile */,
 				D087F31F278201ED006F620B /* FeedCell.swift */,
 				D087F332278484E4006F620B /* CustomTextField.swift */,
 			);
@@ -309,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D087F333278484E4006F620B /* CustomTextField.swift in Sources */,
+				D015669A278C18BE00F4277B /* ProfileHeader.swift in Sources */,
 				D0A6B02C277DE6A8007B198B /* FeedController.swift in Sources */,
 				D07C05032788870900B9E986 /* ImageUploader.swift in Sources */,
 				D087F32D278424BA006F620B /* LoginController.swift in Sources */,
@@ -323,6 +338,7 @@
 				D0A6B02A277DE297007B198B /* MainTabController.swift in Sources */,
 				D087F322278202F4006F620B /* Extensions.swift in Sources */,
 				D0A6B00F277DE18B007B198B /* SceneDelegate.swift in Sources */,
+				D0156698278C18AE00F4277B /* ProfileCell.swift in Sources */,
 				D087F32F278424CA006F620B /* RegistrationController.swift in Sources */,
 				D07C0501278886F300B9E986 /* AuthService.swift in Sources */,
 			);
