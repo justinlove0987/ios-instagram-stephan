@@ -10,6 +10,9 @@
 		A3D65AB33E5E0169C653AC9A /* Pods_InstagramFirestoreTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */; };
 		D0156698278C18AE00F4277B /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0156697278C18AE00F4277B /* ProfileCell.swift */; };
 		D015669A278C18BE00F4277B /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0156699278C18BE00F4277B /* ProfileHeader.swift */; };
+		D07841DA278DBFA0006163F0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841D9278DBFA0006163F0 /* UserService.swift */; };
+		D07841DC278DBFEA006163F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841DB278DBFEA006163F0 /* Constants.swift */; };
+		D07841DE278DC1F3006163F0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841DD278DC1F3006163F0 /* Users.swift */; };
 		D07C04FF2787458C00B9E986 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D07C04FE2787458C00B9E986 /* GoogleService-Info.plist */; };
 		D07C0501278886F300B9E986 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C0500278886F300B9E986 /* AuthService.swift */; };
 		D07C05032788870900B9E986 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C05022788870900B9E986 /* ImageUploader.swift */; };
@@ -38,6 +41,9 @@
 		B8DB735D10E0B62EC65B1B75 /* Pods-InstagramFirestoreTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirestoreTutorial.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		D0156697278C18AE00F4277B /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D0156699278C18BE00F4277B /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		D07841D9278DBFA0006163F0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D07841DB278DBFEA006163F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D07841DD278DC1F3006163F0 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		D07C04FE2787458C00B9E986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D07C0500278886F300B9E986 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D07C05022788870900B9E986 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				D087F321278202F4006F620B /* Extensions.swift */,
+				D07841DB278DBFEA006163F0 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 			children = (
 				D07C05022788870900B9E986 /* ImageUploader.swift */,
 				D07C0500278886F300B9E986 /* AuthService.swift */,
+				D07841D9278DBFA0006163F0 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 		D0A6B028277DE1ED007B198B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D07841DD278DC1F3006163F0 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,12 +341,15 @@
 				D0A6B032277DE6EB007B198B /* NotificationController.swift in Sources */,
 				D087F3442785E550006F620B /* AuthenticationViewModel.swift in Sources */,
 				D0A6B02E277DE6CA007B198B /* SearchController.swift in Sources */,
+				D07841DE278DC1F3006163F0 /* Users.swift in Sources */,
 				D0A6B011277DE18B007B198B /* ViewController.swift in Sources */,
+				D07841DC278DBFEA006163F0 /* Constants.swift in Sources */,
 				D0A6B034277DE703007B198B /* ProfileController.swift in Sources */,
 				D0A6B00D277DE18B007B198B /* AppDelegate.swift in Sources */,
 				D0A6B02A277DE297007B198B /* MainTabController.swift in Sources */,
 				D087F322278202F4006F620B /* Extensions.swift in Sources */,
 				D0A6B00F277DE18B007B198B /* SceneDelegate.swift in Sources */,
+				D07841DA278DBFA0006163F0 /* UserService.swift in Sources */,
 				D0156698278C18AE00F4277B /* ProfileCell.swift in Sources */,
 				D087F32F278424CA006F620B /* RegistrationController.swift in Sources */,
 				D07C0501278886F300B9E986 /* AuthService.swift in Sources */,

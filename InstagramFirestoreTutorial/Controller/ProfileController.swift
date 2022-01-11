@@ -14,6 +14,12 @@ class ProfileController: UICollectionViewController {
     
     //MARK: - Properties
     
+    var user: User? {
+        didSet {
+            navigationItem.title = user?.username
+        }
+    }
+    
     //MARK: - Lifecycle
 
     
@@ -21,6 +27,14 @@ class ProfileController: UICollectionViewController {
         super.viewDidLoad()
         
         configureCollectionView()
+        fetchUser()
+    }
+    
+    // MARK: - API
+    func fetchUser() {
+        UserService.fetchUser { user in
+            self.user = user
+        }
     }
     
     // MARK: - Helpers
