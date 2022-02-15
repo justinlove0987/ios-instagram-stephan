@@ -10,6 +10,7 @@
 		A3D65AB33E5E0169C653AC9A /* Pods_InstagramFirestoreTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8696CC205D3A42BC3D458F /* Pods_InstagramFirestoreTutorial.framework */; };
 		D0156698278C18AE00F4277B /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0156697278C18AE00F4277B /* ProfileCell.swift */; };
 		D015669A278C18BE00F4277B /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0156699278C18BE00F4277B /* ProfileHeader.swift */; };
+		D0215A1227BBC08500A2F980 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0215A1127BBC08500A2F980 /* PostViewModel.swift */; };
 		D07841DA278DBFA0006163F0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841D9278DBFA0006163F0 /* UserService.swift */; };
 		D07841DC278DBFEA006163F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841DB278DBFEA006163F0 /* Constants.swift */; };
 		D07841DE278DC1F3006163F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841DD278DC1F3006163F0 /* User.swift */; };
@@ -48,6 +49,7 @@
 		B8DB735D10E0B62EC65B1B75 /* Pods-InstagramFirestoreTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirestoreTutorial.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirestoreTutorial/Pods-InstagramFirestoreTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		D0156697278C18AE00F4277B /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D0156699278C18BE00F4277B /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		D0215A1127BBC08500A2F980 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		D07841D9278DBFA0006163F0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D07841DB278DBFEA006163F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D07841DD278DC1F3006163F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				D087F3432785E550006F620B /* AuthenticationViewModel.swift */,
 				D07B1FD927907E470010E0F0 /* ProfileHeaderViewModel.swift */,
 				D0B0DA1927A595A7003C6EBC /* UserCellViewModel.swift */,
+				D0215A1127BBC08500A2F980 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0215A1227BBC08500A2F980 /* PostViewModel.swift in Sources */,
 				D087F333278484E4006F620B /* CustomTextField.swift in Sources */,
 				D015669A278C18BE00F4277B /* ProfileHeader.swift in Sources */,
 				D0D1E98927B2A974001D6B5B /* UploadPostController.swift in Sources */,
