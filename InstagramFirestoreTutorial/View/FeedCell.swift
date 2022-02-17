@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol FeedCellDelegate: class {
+    // the comment button is located in the cell. We cannot push a new view controller onto navigation stack from a cell file.
+    func cell(_ cell: FeedCell, wantsToShowCommentsFor post: Post)
+}
+
 class FeedCell: UICollectionViewCell {
     
     // MARK: - Properties
@@ -14,6 +19,8 @@ class FeedCell: UICollectionViewCell {
     var viewModel: PostViewModel? {
         didSet { configure() }
     }
+    
+    weak var delegate: FeedCellDelegate?
     
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
@@ -53,6 +60,7 @@ class FeedCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "comment"), for: .normal)
         button.tintColor = .black
+        button.addTarget(self, action: #selector(didTapComments), for: .touchUpInside)
         return button
     }()
     
@@ -126,6 +134,14 @@ class FeedCell: UICollectionViewCell {
     
     @objc func didTapUsername() {
         print("DEBUG: did tap usrename")
+    }
+    
+    @objc func didTapComments() {
+        guard let viewModel = viewModel else { return }
+        
+        // the cell doesn't have access to our navigation controller only view controllers do.
+        delegate?.cell(self, wantsToShowCommentsFor: viewModel.post)
+        
     }
     
     // MARK: - Helpers
