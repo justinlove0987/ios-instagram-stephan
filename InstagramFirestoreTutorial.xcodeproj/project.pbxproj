@@ -13,6 +13,7 @@
 		D0215A1227BBC08500A2F980 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0215A1127BBC08500A2F980 /* PostViewModel.swift */; };
 		D0215A1427BE235A00A2F980 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0215A1327BE235A00A2F980 /* CommentController.swift */; };
 		D0215A1627BE258900A2F980 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0215A1527BE258900A2F980 /* CommentCell.swift */; };
+		D0215A1C27BF738400A2F980 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0215A1B27BF738400A2F980 /* CommentInputAccessoryView.swift */; };
 		D07841DA278DBFA0006163F0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841D9278DBFA0006163F0 /* UserService.swift */; };
 		D07841DC278DBFEA006163F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841DB278DBFEA006163F0 /* Constants.swift */; };
 		D07841DE278DC1F3006163F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07841DD278DC1F3006163F0 /* User.swift */; };
@@ -54,6 +55,7 @@
 		D0215A1127BBC08500A2F980 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		D0215A1327BE235A00A2F980 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
 		D0215A1527BE258900A2F980 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		D0215A1B27BF738400A2F980 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		D07841D9278DBFA0006163F0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D07841DB278DBFEA006163F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D07841DD278DC1F3006163F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				D087F332278484E4006F620B /* CustomTextField.swift */,
 				D086DAF627A1930E00DC662D /* UserCell.swift */,
 				D0215A1527BE258900A2F980 /* CommentCell.swift */,
+				D0215A1B27BF738400A2F980 /* CommentInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				D0A6B02E277DE6CA007B198B /* SearchController.swift in Sources */,
 				D07841DE278DC1F3006163F0 /* User.swift in Sources */,
 				D0A6B011277DE18B007B198B /* ViewController.swift in Sources */,
+				D0215A1C27BF738400A2F980 /* CommentInputAccessoryView.swift in Sources */,
 				D07B1FDA27907E470010E0F0 /* ProfileHeaderViewModel.swift in Sources */,
 				D0D1E98B27B2AD71001D6B5B /* InputTextView.swift in Sources */,
 				D07841DC278DBFEA006163F0 /* Constants.swift in Sources */,
