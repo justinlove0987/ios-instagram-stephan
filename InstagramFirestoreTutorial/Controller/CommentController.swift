@@ -13,6 +13,8 @@ class CommentController: UICollectionViewController {
     
     // MARK: - Properties
     
+    private let post: Post
+    
     // the reason we have to user lazy variable is because we try to access view.frame.width outside of viewDidLoad.
     private lazy var commentInputView: CommentInputAccessoryView = {
         let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
@@ -22,6 +24,15 @@ class CommentController: UICollectionViewController {
     }()
     
     // MARK: - Lifecycle
+    
+    init(post: Post) {
+        self.post = post
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,7 +95,16 @@ extension CommentController: UICollectionViewDelegateFlowLayout {
 
 extension CommentController: CommentInputAccessoryViewDelegate {
     func inputView(_ inputView: CommentInputAccessoryView, wantsToUploadComment comment: String) {
-        inputView.clearCommentTextView()
+        
+        guard let tab = tabBarController as? MainTabController else { return }
+        guard let user = tab.user else { return }
+        
+        self.showLoader(true)
+        
+        CommentService.uploadComment(comment: comment, postID: post.postId, user: user) { error in
+            self.showLoader(false)
+            inputView.clearCommentTextView()
+        }
     }
     
 }
