@@ -14,6 +14,7 @@ class CommentController: UICollectionViewController {
     // MARK: - Properties
     
     private let post: Post
+    private var comments = [Comment]()
     
     // the reason we have to user lazy variable is because we try to access view.frame.width outside of viewDidLoad.
     private lazy var commentInputView: CommentInputAccessoryView = {
@@ -37,6 +38,7 @@ class CommentController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        fetchComments()
     }
     
     override var inputAccessoryView: UIView? {
@@ -57,6 +59,15 @@ class CommentController: UICollectionViewController {
         tabBarController?.tabBar.isHidden = false
     }
     
+    // MARK: - API
+    
+    func fetchComments() {
+        CommentService.fetchComments(forPost: post.postId) { comments in
+            self.comments = comments
+            self.collectionView.reloadData()
+        }
+    }
+    
     // MARK: - Helpers
     
     func configureCollectionView() {
@@ -73,7 +84,7 @@ class CommentController: UICollectionViewController {
 
 extension CommentController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return comments.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
