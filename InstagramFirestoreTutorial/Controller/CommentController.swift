@@ -94,13 +94,25 @@ extension CommentController {
     }
 }
 
-// UICollectionViewFlowLayout
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension CommentController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let viewModel = CommentViewModel(comment: comments[indexPath.row])
         let height = viewModel.size(forWidth: view.frame.width).height + 32
         return CGSize(width: view.frame.width, height: height)
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension CommentController {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let uid = comments[indexPath.row].uid
+        UserService.fetchUser(withUid: uid) { user in
+            let controller = ProfileController(user: user)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }
 
