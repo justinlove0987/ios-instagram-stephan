@@ -10,6 +10,7 @@ import UIKit
 protocol FeedCellDelegate: class {
     // the comment button is located in the cell. We cannot push a new view controller onto navigation stack from a cell file.
     func cell(_ cell: FeedCell, wantsToShowCommentsFor post: Post)
+    func cell(_ cell: FeedCell, didLike post: Post)
 }
 
 class FeedCell: UICollectionViewCell {
@@ -53,6 +54,7 @@ class FeedCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "like_unselected"), for: .normal)
         button.tintColor = .black
+        button.addTarget(self, action: #selector(didTapLike), for: .touchUpInside)
         return button
     }()
     
@@ -142,6 +144,11 @@ class FeedCell: UICollectionViewCell {
         // the cell doesn't have access to our navigation controller only view controllers do.
         delegate?.cell(self, wantsToShowCommentsFor: viewModel.post)
         
+    }
+    
+    @objc func didTapLike() {
+        guard let viewModel = viewModel else { return }
+        delegate?.cell(self, didLike: viewModel.post)
     }
     
     // MARK: - Helpers
